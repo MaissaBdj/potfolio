@@ -1,0 +1,257 @@
+html {
+    scroll-padding-top: 20px;
+}
+
+body {
+    background-color: #3A0101;
+    margin: 0;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #3A0101;
+}
+#lien {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    color: #3A0101;
+}
+
+h2 {
+    font-family: "MOD20", serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3A0101;
+    font-family: "vijaya", serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+nav {
+    font-family: "Bodoni-72-book", serif;
+}
+
+.nav-principale {
+    display: grid;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.section {
+    display: block;
+    background: #FFFBEC;
+    border: 2px solid #ad9574;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.section:hover {
+    background: #EAD3B4;
+    transform: translateY(-3px);
+}
+
+.nav-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3A0101;
+}
+/*-----contenue------*/
+
+.contenu {
+    position: relative;
+    background-color: #FFFBEC;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contenu::before,
+.contenu::after,
+.coin-bas-g,
+.coin-bas-d {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #3A0101;
+    border-radius: 50%;
+}
+
+.contenu::before {
+    top: -20px;
+    left: -20px;
+}
+
+.contenu::after {
+    top: -20px;
+    right: -20px;
+}
+
+.coin-bas-g {
+    bottom: -20px;
+    left: -20px;
+}
+
+.coin-bas-d {
+    bottom: -20px;
+    right: -20px;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.photo-profil img {
+    width: 140px;          
+    height: 140px;
+    border-radius: 50%;    
+    object-fit: cover;    
+}
+
+/*-------competances------*/
+.sec-competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.competence {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competence img {
+    width: 70px;
+    height: 70px;
+}
+
+.competence p {
+    margin-top: 12px;
+    border-bottom: none;
+    min-height: 30px;
+    text-align: center;
+}
+.competence img {
+    transition: transform 0.2s ease;
+}
+
+.competence:hover img {
+    transform: scale(1.1);
+}
+/*-----contacts-----*/
+.sec-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contact {
+    width: 180px;
+    text-align: center;
+}
+
+.contact img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact p {
+    border-bottom: none;
+    margin-top: 10px;
+}
+.contact img {
+    transition: transform 0.2s ease;
+}
+
+.contact:hover img {
+    transform: scale(1.1);
+}
+
+/*------footer-font-----*/
+footer {
+    font-family: "vijaya", serif;
+}
+
+
+@font-face {
+    font-family: "Bodoni-72-book";
+    src: url("./police/bodoni-72-book.ttf");
+}
+
+@font-face {
+    font-family: "MOD20";
+    src: url("./police/MOD20.TTF");
+}
+
+@font-face {
+    font-family: "vijaya";
+    src: url("./police/vijaya.ttf");
+}
+/*-----API------*/
+.chat {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#cat {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.bouton-chat {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#api {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: auto;
+    min-width: 200px;
+}
+
+
+#api .nav-text:hover {
+    background: #EAD3B4;
+    transform: translateY(-3px);
+}
+
+#api .nav-text {
+    font-family: "Bodoni-72-book", serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3A0101;
+    border: 2px solid #ad9574;
+    border-radius: 25px;
+    padding: 8px 16px;
+    text-align: center;
+}
